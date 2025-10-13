@@ -1,57 +1,112 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página Web</title>
-</head>
+  </head>
 
-<body>
-    <!-- Encabezado de la Página -->
+  <body>
     <header>
-        <h1>Cursos de Programación</h1>
+      <h1>Cursos de Programación</h1>
     </header>
 
-    <!-- Contenido principal -->
     <main>
-        <h2>Aprende a tu ritmo</h2>
+      <h2>Aprende a tu ritmo</h2>
 
-        <p>¡Hola, mundo!</p>
+      <p>¡Hola, mundo!</p>
 
-        <ul>
-            <li>Estoy aprendiendo a utilizar HTML.</li>
-        </ul>
+      <ul>
+        <li>Estoy aprendiendo a utilizar HTML.</li>
+      </ul>
 
-        <img src="mundo.png" width="200" height="200" alt="Imagen del mundo" title="Imagen del mundo">
+      <img
+        src="mundo.png"
+        width="200"
+        height="200"
+        alt="Imagen del mundo"
+        title="Imagen del mundo"
+      />
 
-        <a href="https://download.java.net/java/early_access/panama/docs/api/index.html" target="_blank">¡Clic para ir a la API de Java!</a>
+      <a
+        href="https://download.java.net/java/early_access/panama/docs/api/index.html"
+        target="_blank"
+        >¡Clic para ir a la API de Java!</a
+      >
 
-        <table>
-            <thead>
-                <tr>
-                    <th>Lenguaje de Programación</th>
-                    <th>Dificultad</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Python</td>
-                    <td>Facil</td>
-                </tr>
-                <tr>
-                    <td>Java</td>
-                    <td>Media</td>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Lenguaje de Programación</th>
+            <th>Dificultad</th>
+            <th colspan="2">Aprender</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Python</td>
+            <td>Facil</td>
+            <td>Si</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>Java</td>
+            <td>Media</td>
+            <td>Si</td>
+            <td>No</td>
+          </tr>
+          <tr>
+            <td>C#</td>
+            <td>Media</td>
+            <td>Si</td>
+            <td>No</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">Número de Lenguajes: 3</td>
+          </tr>
+        </tfoot>
+      </table>
 
-                </tr>
-            </tbody>
-        </table>
+      <form action="">
+        <label for="nombre"
+          >Nombre:
+          <input
+            type="text"
+            placeholder="Escribe aquí tu nombre"
+            required
+            name="nombre"
+            id="nombre"
+          />
+        </label>
+        <label for="edad"
+          >Edad:
+          <input
+            type="number"
+            min="2"
+            max="10"
+            step="0.1"
+            placeholder="Escribe aquí tu edad"
+            name="edad"
+            id="edad"
+          />
+        </label>
+        <label for="fecha"
+          >Fecha de Nacimiento:
+          <input
+            type="date"
+            placeholder="Escribe aquí tu fecha de nacimiento"
+            name="fecha"
+            id="fecha"
+          />
+        </label>
+        <button>Enviar</button>
+      </form>
     </main>
 
-    <!-- Pie de página -->
     <footer>
-        <p>© 2025 Todos los derechos reservados.</p>
+      <p>© 2025 Todos los derechos reservados.</p>
     </footer>
-</body>
-
+  </body>
 </html>
