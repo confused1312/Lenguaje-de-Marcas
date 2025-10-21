@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso de HTML</title>
+  </head>
+  <body>
+    <h1>Curso de HTML</h1>
+
+    <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">
+      Wiki de HTML
+    </a>
+
+    <img src="image.png" alt="HTML5 Logo" height="200" width="300" />
+
+    <form action="">
+      <fieldset>
+        <legend>Nombre</legend>
+        <label for="nombre">
+          <input
+            type="text"
+            placeholder="Escribe tu nombre"
+            name="nombre"
+            id="nombre"
+          />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Email</legend>
+        <label for="email">
+          <input
+            type="email"
+            placeholder="Escribe tu email"
+            name="email"
+            id="email"
+          />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Teléfono</legend>
+        <label for="telefono">
+          <input
+            type="tel"
+            placeholder="Escribe tu télefono"
+            name="telefono"
+            id="telefono"
+          />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Fecha de Nacimiento</legend>
+        <label for="fechaDeNacimiento">
+          <input type="date" name="fechaDeNacimiento" id="fechaDeNacimiento" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Nivel de Conocimiento:</legend>
+        <fieldset>
+        <input type="radio" name="nivel" id="avanzado" value="avanzado" />
+        <label for="avanzado">Avanzado</label>
+
+        <input type="radio" name="nivel" id="medio" value="medio" />
+        <label for="medio">Medio</label>
+
+        <input type="radio" name="nivel" id="bajo" value="bajo" checked/>
+        <label for="bajo">Bajo</label>
+        </fieldset>
+      </fieldset>
+
+      <fieldset>
+        <legend>Extras del Curso</legend>
+        <fieldset>
+        <input type="checkbox" name="extras" id="extra1" value="apuntes" />
+        <label for="extra1">Apuntes PDF</label>
+
+        <input type="checkbox" name="extras" id="extra2" value="videos" />
+        <label for="extra2">Videos Extra</label>
+
+        <input type="checkbox" name="extras" id="extra3" value="ejercicio" />
+        <label for="extra3">Ejercicios</label>
+
+        <input type="checkbox" name="extras" id="extra4" value="certificado" />
+        <label for="extra4">Certificado</label>
+        </fieldset>
+      </fieldset>
+
+      <fieldset>
+        <legend>¿Cómo nos encontrastes?</legend>
+        <label for="comoNosEncontraste">
+          <select name="comoNosEncontraste" id="comoNosEncontraste">
+            <option value="sinOpcion">-------------------------------------------</option>
+            <option value="internet">A través de Internet</option>
+            <option value="redes">Redes Sociales</option>
+            <option value="amigo">Por recomendación de un amigo</option>
+            <option value="otro">Otro</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Información adicional</legend>
+        <label for="informacionAdicional">
+          <textarea
+            name="informacionAdicional"
+            id="informacionAdicional"
+            rows="10"
+            cols="65"
+          ></textarea>
+        </label>
+      </fieldset>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
